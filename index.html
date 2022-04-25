@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <header>
+        <div class="cur">
+            Current Time:
+            <span id=current_time></span>
+        </div>
+    </header>
+    <main>
+        <section class="choose-time">
+            <span>104 Data: Choose Start time 00:00:00 - End time 00:00:00</span>
+            <form method="POST" action="http://127.0.0.1:8080/query-with-time">
+                <input type="date" id="start_time" name="start_time">
+                <input type="date" id="end_time" name="end_time">
+                <input id="cur_time" name="cur_time"></div>
+                <button type="submit">Submit!</button>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
